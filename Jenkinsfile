@@ -3,32 +3,32 @@ pipeline {
   stages {
     stage('Run SQL in DEV') {
       steps {
-        sleep 2
+        echo 'Executing SQL in DEV'
       }
     }
     stage('Deploy to DEV') {
       steps {
-        timeout(time: 2)
+        echo 'Deploying build to DEV'
       }
     }
     stage('Restart DEV') {
       steps {
-        timeout(time: 2)
+        echo 'Restarting DEV Apps'
       }
     }
     stage('Run SQL in SYS') {
       steps {
-        timeout(time: 2)
+        echo 'Executing SQL in SYS'
       }
     }
     stage('Deploy to SYS') {
       steps {
-        timeout(time: 2)
+        echo 'Deploying build to SYS'
       }
     }
-    stage('Start SYS') {
+    stage('Retart SYS') {
       steps {
-        timeout(time: 2)
+        echo 'Restarting SYS Apps'
       }
     }
   }
