@@ -7,4 +7,7 @@ pipeline {
       }
     }
   }
+  parameters {
+        string(name: 'FirstParam', defaultValue: 'First Parameter', description: 'Enter value for first parameter')
+      }
 }
